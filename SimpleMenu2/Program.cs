@@ -20,6 +20,17 @@ namespace SimpleMenu
             {
                 userChoice = char.ToLower(Console.ReadKey(true).KeyChar);
                 Console.WriteLine("You chose " + userChoice);
+
+                switch (userChoice)
+                {
+                    case '1':
+                        Console.WriteLine("Making Cappucinno...");
+                        Console.WriteLine("Steam the milk...");
+                        Console.WriteLine("Froth the milk...");
+                        Console.WriteLine("Make espresso...");
+                        Console.WriteLine("Add the milk to the espresso...");
+                        break;
+                }
             } while (!userChoice.Equals('q'));
         }
     }
