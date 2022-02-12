@@ -30,6 +30,11 @@ namespace SimpleMenu
                         Console.WriteLine("Make espresso...");
                         Console.WriteLine("Add the milk to the espresso...");
                         break;
+                    case '2':
+                        Console.WriteLine("Making Latte");
+                        Console.WriteLine("Make espresso...");
+                        Console.WriteLine("Add the milk to the espresso...");
+                        break;
                 }
             } while (!userChoice.Equals('q'));
         }
