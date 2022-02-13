@@ -42,9 +42,12 @@ namespace SimpleMenu
                     case '6':
                         Console.WriteLine("Making Expresso");
                         break;
-                    default: Console.WriteLine("Invalid Choice, Returning Coins");
-                        break;
+                    default: 
+                        Console.WriteLine("Cancel/Quit, Returning Coins");
+                        continue;//jumpd to linr 51
                 }
+                Console.WriteLine("Dispensing Coffee");
+                Console.WriteLine("Have a nice day");
             } while (!userChoice.Equals('q'));
         }
     }
