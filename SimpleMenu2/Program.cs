@@ -23,17 +23,26 @@ namespace SimpleMenu
 
                 switch (userChoice)
                 {
-                    case '1':
-                        Console.WriteLine("Making Cappucinno...");
-                        Console.WriteLine("Steam the milk...");
-                        Console.WriteLine("Froth the milk...");
-                        Console.WriteLine("Make espresso...");
-                        Console.WriteLine("Add the milk to the espresso...");
-                        break;
+                    case '1': //runs the same code as case '2'
                     case '2':
                         Console.WriteLine("Making Latte");
                         Console.WriteLine("Make espresso...");
+                        Console.WriteLine("Steam the milk...");
                         Console.WriteLine("Add the milk to the espresso...");
+                        break;
+                    case '3':
+                        Console.WriteLine("Making Americano");
+                        break;
+                    case '4':
+                        Console.WriteLine("Making Mocha");
+                        break;
+                    case '5':
+                        Console.WriteLine("Making Macchiato");
+                        break;
+                    case '6':
+                        Console.WriteLine("Making Expresso");
+                        break;
+                    default: Console.WriteLine("Invalid Choice, Returning Coins");
                         break;
                 }
             } while (!userChoice.Equals('q'));
